@@ -3,7 +3,7 @@
 $p = "Naturalmente il pasticcino (ormai Alice non si stupisce di nulla) la fa crescere, ma in modo esagerato: ora non è più assolutamente possibile passare attraverso la porta e la bevanda per rimpicciolire è finita. Alice piange, piange, finché si forma sul pavimento un laghetto alto 10 centimetri. Nel frattempo il Coniglio Bianco, rientrato nel vestibolo, la vede e spaventato fugge via lasciando cadaere i guanti bianchi e il ventaglio. Alice è frastornata e si domanda chi è e se ha perso la memoria cercando di ricordare tabelline, geografia e filastrocche senza molto successo: teme di essersi trasformata in Mabel, una bimba evidentemente piuttosto ignorante e anche povera.";
 $p_length = strlen($p);
 $word = $_GET["word"];
-$p_censored = str_replace($word, '***', $p);
+$p_censored = str_ireplace($word, '***', $p);
 $p_censored_length = strlen($p_censored);
 
 ?>
